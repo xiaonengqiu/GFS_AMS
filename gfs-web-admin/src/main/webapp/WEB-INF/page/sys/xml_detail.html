@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>详情页</title>
+    #parse("sys/header.html")
+</head>
+<body>
+<div class="panel panel-default" id="rrapp" v-cloak>
+    <div class="panel-heading">{{title}}</div>
+    <form class="form-horizontal">
+        <div class="form-group">
+            <div class="col-sm-2 control-label">Agency</div>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" v-model="row.agency" placeholder="agency"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-2 control-label">Headline</div>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" v-model="row.headline" placeholder="headline"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-2 control-label">Date</div>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" v-model="row.publishDate" placeholder="date"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-2 control-label">City</div>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" v-model="row.city" placeholder="city"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-2 control-label">Content</div>
+            <div class="col-sm-10">
+                <textarea class="form-control" rows="10" v-model="row.content" placeholder="content"></textarea>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-2 control-label"></div>
+            <input type="button" class="btn btn-warning" @click="back" value="Return"/>
+        </div>
+    </form>
+</div>
+
+<script src="${rc.contextPath}/js/sys/xml_detail.js?_${date.systemTime}"></script>
+</body>
+</html>

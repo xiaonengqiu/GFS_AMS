@@ -1,0 +1,17 @@
+package ${package}.dao;
+
+import ${package}.entity.${className}Entity;
+
+/**
+ * 简   述：${comments}
+ * 功   能：
+ * 作   者：${author}
+ * 邮   箱：${email}
+ * 创建时间：${datetime}
+ * 修 改 人：
+ * 修改原因：
+ * 修改时间：
+ */
+public interface ${className}Dao extends BaseDao<${className}Entity> {
+	
+}
